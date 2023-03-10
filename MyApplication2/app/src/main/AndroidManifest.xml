@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bizzlogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/bizzlogo"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".perfil_empresaf"></activity>
+        <activity android:name=".transacao" />
+        <activity android:name=".transacoes" />
+        <activity android:name=".EditaPerfil" />
+        <activity android:name=".Cartao_empresa" />
+        <activity android:name=".campanha" />
+        <activity android:name=".Campanhas" />
+        <activity android:name=".empresaNfidelizada" />
+        <activity android:name=".empresaFidelizada" />
+        <activity android:name=".definicoes" />
+        <activity android:name=".mostrar_dados" />
+        <activity android:name=".registo" />
+        <activity android:name=".homePage" />
+        <activity android:name=".Inicio" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

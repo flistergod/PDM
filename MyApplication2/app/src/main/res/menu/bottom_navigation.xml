@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Página Inicial"/>
+
+    <item
+        android:id="@+id/nav_cartao"
+        android:icon="@drawable/ic_credit_card_black_24dp"
+        android:title="Cartão"/>
+
+    <item
+        android:id="@+id/nav_procura"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Procura"/>
+
+
+
+    <item
+        android:id="@+id/nav_perfil"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="Perfil"/>
+
+</menu>

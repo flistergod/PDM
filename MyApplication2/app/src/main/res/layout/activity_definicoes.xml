@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".definicoes">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_definicoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Definições"
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+
+        >
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <Button
+        android:id="@+id/button_email"
+        android:layout_width="214dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/button_registo"
+        android:text="ALTERAR EMAIL"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_definicoes" />
+
+    <Button
+        android:id="@+id/button_pass"
+        android:layout_width="214dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/button_registo"
+        android:text="ALTERAR PASSWORD"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_email" />
+
+
+    <Button
+        android:id="@+id/button_conta"
+        android:layout_width="214dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/button_registo"
+        android:text="APAGAR CONTA"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_pass" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

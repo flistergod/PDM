@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".empresaFidelizada">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_empresaF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/orange"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:title="Empresa"
+                app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                app:contentInsetStartWithNavigation="0dp"
+
+                >
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <Button
+                android:id="@+id/button_info"
+                android:layout_width="214dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/button_registo"
+                android:text="Perfil"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar_empresaF" />
+
+
+            <Button
+                android:id="@+id/button_campanhas"
+                android:layout_width="214dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/button_registo"
+                android:text="Campanhas"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_info" />
+
+            <Button
+                android:id="@+id/button_cartao"
+                android:layout_width="214dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="65dp"
+                android:background="@drawable/button_registo"
+                android:text="Cartão"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_campanhas" />
+
+
+            <Button
+                android:id="@+id/button_transacoes"
+                android:layout_width="214dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="65dp"
+                android:background="@drawable/button_registo"
+                android:text="Transações"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_cartao" />
+
+
+            <Button
+                android:id="@+id/button_recomendar"
+                android:layout_width="214dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="65dp"
+                android:background="@drawable/button_registo"
+                android:text="Recomendar"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_transacoes" />
+
+
+            <Button
+                android:id="@+id/button_ligar"
+                android:layout_width="214dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="65dp"
+                android:background="@drawable/button_registo"
+                android:text="Telefonar"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_recomendar" />
+
+            <Button
+                android:id="@+id/button_enviar_email"
+                android:layout_width="214dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="65dp"
+                android:background="@drawable/button_registo"
+                android:text="Enviar email"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_ligar" />
+
+
+            <Button
+                android:id="@+id/button_localizacao"
+                android:layout_width="214dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="65dp"
+                android:background="@drawable/button_registo"
+                android:text="Direções"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_enviar_email" />
+
+            <Button
+                android:id="@+id/button_desfidelizar"
+                android:layout_width="214dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="65dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/button_registo"
+                android:text="Desfidelizar"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_localizacao" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

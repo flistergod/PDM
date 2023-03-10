@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Perfil">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/nome_perfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="100dp"
+                android:gravity="center"
+                android:text="Nome:"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/perfil_tlf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="56dp"
+                android:text="Telefone:"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nome_perfil" />
+
+            <TextView
+                android:id="@+id/perfil_datanasc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="60dp"
+                android:text="Data Nascimento:"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/perfil_tlf" />
+
+            <TextView
+                android:id="@+id/perfil_morada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="56dp"
+                android:text="Morada:"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/perfil_datanasc" />
+
+            <TextView
+                android:id="@+id/perfil_ec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="56dp"
+                android:text="Estado Civil:"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/getmorada" />
+
+            <TextView
+                android:id="@+id/perfil_genero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="56dp"
+                android:text="Género:"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/perfil_ec" />
+
+            <TextView
+                android:id="@+id/perfil_animais"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="56dp"
+                android:text="Animais:"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/perfil_genero" />
+
+            <TextView
+                android:id="@+id/perfil_cc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="56dp"
+                android:text="Cartão Cidadão:"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/perfil_animais" />
+
+            <TextView
+                android:id="@+id/perfil_nif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="56dp"
+                android:text="NIF:"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/perfil_cc" />
+
+            <TextView
+                android:id="@+id/getNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/rounded_border"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/nome_perfil"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/getTlf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="56dp"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@drawable/rounded_border"
+                app:layout_constraintStart_toEndOf="@+id/perfil_tlf"
+                app:layout_constraintTop_toBottomOf="@+id/getNome" />
+
+            <TextView
+                android:id="@+id/getdata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="60dp"
+                android:text=""
+                android:gravity="center"
+                android:background="@drawable/rounded_border"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/perfil_datanasc"
+                app:layout_constraintTop_toBottomOf="@+id/getTlf" />
+
+            <TextView
+                android:id="@+id/getmorada"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="56dp"
+                android:background="@drawable/rounded_border"
+                android:text=""
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/perfil_morada"
+                app:layout_constraintTop_toBottomOf="@+id/getdata" />
+
+            <TextView
+                android:id="@+id/getec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="56dp"
+                android:text=""
+                android:gravity="center"
+                android:background="@drawable/rounded_border"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/perfil_ec"
+                app:layout_constraintTop_toBottomOf="@+id/getmorada" />
+
+            <TextView
+                android:id="@+id/getgenero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="56dp"
+                android:text=""
+                android:gravity="center"
+                android:background="@drawable/rounded_border"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/perfil_genero"
+                app:layout_constraintTop_toBottomOf="@+id/getec" />
+
+            <TextView
+                android:id="@+id/getcc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="56dp"
+                android:text=""
+                android:gravity="center"
+                android:background="@drawable/rounded_border"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/perfil_cc"
+                app:layout_constraintTop_toBottomOf="@+id/getanimais" />
+
+            <TextView
+                android:id="@+id/getanimais"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:layout_marginTop="56dp"
+                android:text=""
+                android:background="@drawable/rounded_border"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/perfil_animais"
+                app:layout_constraintTop_toBottomOf="@+id/getgenero" />
+
+
+            <TextView
+                android:id="@+id/getnif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="56dp"
+                android:text=""
+                android:gravity="center"
+                android:background="@drawable/rounded_border"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/perfil_nif"
+                app:layout_constraintTop_toBottomOf="@+id/getcc" />
+
+            <TextView
+                android:id="@+id/perfil_registo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="56dp"
+                android:text="Data Adesão:"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/perfil_nif"  />
+
+            <TextView
+                android:id="@+id/get_registo"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="56dp"
+                android:background="@drawable/rounded_border"
+                android:text=""
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/perfil_registo"
+                app:layout_constraintTop_toBottomOf="@+id/getnif" />
+
+
+            <Button
+                android:id="@+id/button_editar"
+                android:layout_width="214dp"
+                android:layout_height="50dp"
+
+                android:layout_marginStart="70dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/button_registo"
+                android:text="EDITAR PERFIL"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/get_registo" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</FrameLayout>

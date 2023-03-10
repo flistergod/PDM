@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditaPerfil">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="-54dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_edita_perfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/orange"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                app:contentInsetStartWithNavigation="0dp"
+                app:title="Editar Perfil"
+
+                >
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+            <TextView
+                android:id="@+id/edita_perfil_nome"
+                android:layout_width="51dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="60dp"
+                android:gravity="center"
+                android:text="Nome"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar_edita_perfil" />
+
+            <EditText
+                android:id="@+id/edita_perfil_editnome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="60dp"
+                android:ems="10"
+                android:hint="Name "
+                android:inputType="textPersonName"
+                android:maxLength="100"
+                app:layout_constraintStart_toEndOf="@+id/edita_perfil_nome"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar_edita_perfil" />
+
+            <com.wafflecopter.charcounttextview.CharCountTextView
+                android:id="@+id/edita_perfil_nomeCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/orange"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.896"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edita_perfil_editnome"
+                app:maxCharacters="70" />
+
+
+            <TextView
+                android:id="@+id/edita_perfil_telefone"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="56dp"
+                android:gravity="center"
+                android:text="Telefone"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edita_perfil_nome" />
+
+            <EditText
+                android:id="@+id/edita_perfil_editTlf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="41dp"
+                android:layout_marginLeft="41dp"
+                android:layout_marginTop="56dp"
+                android:ems="10"
+                android:hint="Telefone "
+                android:maxLength="9"
+                android:inputType="phone"
+                app:layout_constraintStart_toEndOf="@+id/edita_perfil_telefone"
+                app:layout_constraintTop_toBottomOf="@+id/edita_perfil_editnome" />
+
+            <com.wafflecopter.charcounttextview.CharCountTextView
+                android:id="@+id/edita_perfil_tlfCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/orange"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.896"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edita_perfil_editTlf"
+                app:maxCharacters="9" />
+
+            <TextView
+                android:id="@+id/edita_perfil_CC"
+                android:layout_width="80dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="56dp"
+                android:gravity="start"
+                android:text="Cartão Cidadão"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edita_perfil_telefone" />
+
+            <EditText
+                android:id="@+id/edita_perfil_editCC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="31dp"
+                android:layout_marginLeft="31dp"
+                android:layout_marginTop="56dp"
+                android:ems="10"
+                android:hint="Cartão Cidadão "
+                android:inputType="none"
+                android:maxLength="12"
+                app:layout_constraintStart_toEndOf="@+id/edita_perfil_CC"
+                app:layout_constraintTop_toBottomOf="@+id/edita_perfil_editTlf" />
+
+            <com.wafflecopter.charcounttextview.CharCountTextView
+                android:id="@+id/edita_perfil_ccCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/orange"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.896"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edita_perfil_editCC"
+                app:maxCharacters="12" />
+
+            <TextView
+                android:id="@+id/edita_perfil_NIF"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="56dp"
+                android:gravity="center"
+                android:text="NIF"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edita_perfil_CC" />
+
+            <EditText
+                android:id="@+id/edita_perfil_editNIF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="83dp"
+                android:layout_marginLeft="83dp"
+                android:ems="10"
+                android:layout_marginTop="56dp"
+                android:hint="NIF "
+                android:maxLength="9"
+                android:inputType="number"
+                app:layout_constraintStart_toEndOf="@+id/edita_perfil_NIF"
+                app:layout_constraintTop_toBottomOf="@+id/edita_perfil_editCC" />
+
+            <com.wafflecopter.charcounttextview.CharCountTextView
+                android:id="@+id/edita_perfil_nifCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/orange"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.896"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edita_perfil_editNIF"
+                app:maxCharacters="9" />
+
+
+
+            <TextView
+                android:id="@+id/edita_perfil_Morada"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="56dp"
+                android:gravity="center"
+                android:text="Morada"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edita_perfil_NIF" />
+
+
+            <EditText
+                android:id="@+id/edita_perfil_editMorada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="49dp"
+                android:layout_marginLeft="49dp"
+                android:layout_marginTop="56dp"
+                android:ems="10"
+                android:hint="Morada "
+                android:maxLength="200"
+                android:inputType="textPostalAddress"
+                app:layout_constraintStart_toEndOf="@+id/edita_perfil_Morada"
+                app:layout_constraintTop_toBottomOf="@+id/edita_perfil_editNIF" />
+
+            <com.wafflecopter.charcounttextview.CharCountTextView
+                android:id="@+id/edita_perfil_moradaCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/orange"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.896"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edita_perfil_editMorada"
+                app:maxCharacters="200" />
+
+
+            <TextView
+                android:id="@+id/edita_perfil_dataNasc"
+                android:layout_width="101dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="56dp"
+                android:gravity="start"
+                android:text="Data Nascimento"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edita_perfil_Morada" />
+
+
+            <EditText
+                android:id="@+id/edita_perfil_editDataNasc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="9dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="56dp"
+                android:ems="10"
+                android:hint="Data de Nascimento"
+                android:inputType="none"
+                android:focusable="false"
+                app:layout_constraintStart_toEndOf="@+id/edita_perfil_dataNasc"
+                app:layout_constraintTop_toBottomOf="@+id/edita_perfil_editMorada" />
+
+
+            <TextView
+                android:id="@+id/edita_perfil_estadoCivil"
+                android:layout_width="75dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="56dp"
+                android:gravity="start"
+                android:text="Estado Civil"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edita_perfil_dataNasc" />
+
+
+            <Spinner
+                android:id="@+id/edita_perfil_editEstadoCivil"
+                android:layout_width="213dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="56dp"
+                android:backgroundTint="#E84424"
+                android:ems="10"
+                android:hint="Estado Cvil"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toEndOf="@+id/edita_perfil_estadoCivil"
+                app:layout_constraintTop_toBottomOf="@+id/edita_perfil_editDataNasc" />
+
+            <TextView
+                android:id="@+id/edita_perfil_genero"
+                android:layout_width="61dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="56dp"
+                android:gravity="center"
+                android:text="Género"
+                android:textColor="@android:color/black"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edita_perfil_estadoCivil" />
+
+            <Spinner
+                android:id="@+id/edita_perfil_editGenero"
+                android:layout_width="213dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="49dp"
+                android:layout_marginLeft="49dp"
+                android:layout_marginTop="56dp"
+                android:ems="10"
+                android:hint="Género"
+                android:inputType="none"
+                app:layout_constraintStart_toEndOf="@+id/edita_perfil_genero"
+                app:layout_constraintTop_toBottomOf="@+id/edita_perfil_editEstadoCivil"
+                android:backgroundTint="#E84424"/>
+
+            <TextView
+                android:id="@+id/edita_perfil_animais"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="56dp"
+                android:gravity="center"
+                android:text="Animais"
+                android:textColor="@android:color/black"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edita_perfil_genero" />
+
+            <RadioGroup
+                android:id="@+id/edita_perfil_radio_animais"
+                android:layout_width="142dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="62dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toEndOf="@+id/edita_perfil_animais"
+                app:layout_constraintTop_toBottomOf="@+id/edita_perfil_editGenero">
+
+                <RadioButton
+                    android:id="@+id/edita_perfil_radiosim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="20dp"
+                    android:paddingRight="20dp"
+                    android:text="sim"
+                    android:textSize="14dp" />
+
+                <RadioButton
+
+                    android:id="@+id/edita_perfil_radionao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="nao"
+                    android:textSize="14dp" />
+            </RadioGroup>
+
+
+            <Button
+                android:id="@+id/edita_perfil_button_alterar"
+                android:layout_width="251dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/button_registo"
+                android:text="SUBMETER ALTERAÇÕES"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.534"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edita_perfil_radio_animais" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
